@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="{{ appcss }}" >
+
+    <!-- for dev only -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
+    
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick-theme.css"/>
+    <!-- for dev only end -->
+
+  </head>
+  <body>
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="col-xs-12 col-md-12 align-center">
+        <h1>App</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-md-10">
+        <input type="text" class="form-control" id="searchTerm" placeholder="Movie Name">      
+      </div>
+      <div class="col-xs-12 col-md-2">
+        <button type="button" id="search" class="btn btn-md btn-info-outline">Find Movie</button>      
+      </div>
+    </div>
+
+
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-12 text-xs-center">
+        <h5><span id="resultsCount">0</span> <small>Results found</small></h5> 
+        <div id="results-pane">
+          
+          <div id="title-slide"></div>
+
+        </div>
+      </div>
+    </div>
+ 
+ <div id="results-info-pane">
+
+    <div class="row">
+      <div class="col-xs-12 col-md-4 col-md-offset-4">
+
+
+          <div class="card text-xs-center">
+            <div class="card-header"><img src="_assets/shopify-logo.png" height="20" style="display:inline-block;"> Shopify Integration</div>
+            <div class="card-block">
+              <button type="button" class="btn btn-md btn-success-outline btn-block" id="addToShopify" data-movie="">Add to Shopify</button>
+              <h4 class="card-title"></h4>
+              <p class="card-text shopify-link-added">link</p>
+              <p class="card-text"><small class="text-muted shopify-status">Added</small></p>              
+            </div>
+          </div>
+
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-xs-12 col-md-12">
+
+          
+          <dl class="dl-horizontal results-view">
+
+            <dt class="col-sm-8 col-sm-offset-2 text-xs-center text-md-center"><h5 id="selected-title">Title</h5></dt>
+            <dd></dd>
+            <dt class="col-sm-6">Release Date</dt>
+            <dd class="col-sm-6" id="selected-release-date"></dd>
+            <dt class="col-sm-6">Description</dt>
+            <dd class="col-sm-6" id="selected-description">Test</dd>
+
+            <dt class="col-sm-6">Cover</dt>
+            <dd class="col-sm-6"><a href="" id="selected-cover" class="btn btn-info" download="">Save</a></dd>
+
+            <dt class="col-sm-6">Search Trailer</dt>
+            <dd class="col-sm-6"><a href="" id="selected-trailer" class="btn btn-info" target="_blank">View Trailer</a></dd>            
+
+            <dt class="col-sm-6">Advisory</dt>
+            <dd class="col-sm-6"><span class="label label-primary" id="selected-advisory">R</span></dd>
+
+            <dt class="col-sm-6">iTunes Price</dt>
+            <dd class="col-sm-6" id="selected-price">$9.99</dd>
+
+            <dt class="col-sm-6">Genre</dt>
+            <dd class="col-sm-6" id="selected-genre">Family</dd>  
+
+          </dl>
+          
+
+      </div>
+    </div> 
+
+  </div><!-- results pane -->
+
+  </div>
+    
+
+ 
+   <!-- <script src="{{ vendorjs }}"></script> -->
+    <script src="{{ appjs }}"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+
+  </body>
+</html>

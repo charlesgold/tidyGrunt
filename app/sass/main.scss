@@ -1,0 +1,14 @@
+
+
+@import "variables";
+@import "bootstrap-custom.scss"; //variables-override loaded inside file.
+
+
+
+@import "mixins";
+
+//vendor customs
+@import "slick";
+
+@import "sections";
+@import "app";

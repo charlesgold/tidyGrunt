@@ -1,0 +1,37 @@
+
+//
+//
+//
+
+
+main {
+	overflow-x:hidden;
+}
+section {
+	
+	height: auto;
+	height: 100%;
+	min-height: 600px;
+	@include media($app-sm-break){
+
+			padding-bottom: 20px;
+
+	}
+}
+
+.section-half {
+
+}
+
+.parallax {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+

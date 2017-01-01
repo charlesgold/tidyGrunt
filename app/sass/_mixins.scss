@@ -1,0 +1,63 @@
+//
+//
+//
+
+
+//TOC
+//* media queries
+//
+//* section customs
+//
+//* logo
+//
+//*
+
+@mixin media($size) {
+  @media only screen and (max-device-width: $size){
+  	@content;
+  }
+}
+
+@mixin app-sm-break {
+	@include media($app-sm-break){
+		@content;
+	}
+}
+@mixin app-md-break {
+	@include media($app-md-break){
+		@content;
+	}
+}
+
+@mixin section-story($bg, $border, $top) {
+	margin-top: $top;
+	background: $bg;
+	border: $border;
+	@if (lightness($bg) > 50){
+		color: #000;
+	} @else {
+		color: #fff;
+	}
+	padding:5px;
+}
+
+
+@mixin hip-logo($w:225px, $h:188px){
+
+	background-image: url($hipLogoSrc);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: $w $h;
+	height: $h;
+	@content;
+}
+
+
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="{{ appcss }}" >
+
+    <!-- for dev only -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- for dev only end -->
+
+  </head>
+  <body>
+
+    <main role="main">
+
+
+      
+
+       
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="{{ vendorjs }}"></script>
+    <script src="{{ appjs }}"></script>
+  <script>
+    $(document).ready(function(){
+
+      $.ajax({ 
+          type: 'GET', 
+          url: 'https://itunes.apple.com/search', 
+          data: { entity: 'movie',term: 'noah' }, 
+          dataType: 'jsonp',
+          success: function (data) { 
+              var res = JSON.stringify(data);
+              var da = JSON.parse(res);
+              //var da = JSON.parse(data);
+              //console.log(data[0].resultsCount); 
+              console.log(da);
+              console.log(da.results[0].artworkUrl100);
+
+
+          }
+      });  
+
+    });
+  </script> 
+
+  </body>
+</html>

@@ -1,0 +1,36 @@
+{
+  "name": "grunt-bower-starter",
+  "version": "1.0.0",
+  "description": "Starter project using Grunt, Bower, and Git with basic grunt plugins installed.",
+  "main": "app.htm",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ctopjian/grunt-bower-starter.git"
+  },
+  "keywords": [
+    "grunt",
+    "bower",
+    "git"
+  ],
+  "author": "Charlie Topjian",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ctopjian/grunt-bower-starter/issues"
+  },
+  "homepage": "https://github.com/ctopjian/grunt-bower-starter#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.7.0",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-connect": "^0.11.2",
+    "grunt-contrib-copy": "^0.8.2",
+    "grunt-contrib-sass": "^0.9.2",
+    "grunt-contrib-uglify": "^0.11.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-text-replace": "^0.4.0",
+    "load-grunt-tasks": "^3.3.0"
+  }
+}
