@@ -13,8 +13,7 @@ Project description here
 * notes
 
 #Contact#
-* Email: charlietopjian@gmail.com
-* Github: [http://github.com/ctopjian](http://github.com/ctopjian)
+* Github: [http://github.com/charlesgold](http://github.com/charlesgold)
 
 #Resources#
 * [https://docs.npmjs.com/cli/install](NPM install options)
